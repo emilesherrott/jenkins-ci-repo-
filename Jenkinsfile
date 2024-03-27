@@ -7,17 +7,17 @@ pipeline {
                 // sh 'node --version'
                 echo 'Build'
                 // Whats the path
-                echo '$PATH'
-                // What's the build number
-                echo 'Build Number: $env.BUILD_NUMBER'
+                echo "$PATH"
+                // What"s the build number
+                echo "Build Number: $env.BUILD_NUMBER"
                 // Whats the build id
-                echo 'Build ID: $env.BUILD_ID'
-                // What's the build tag
-                echo 'Build Tag: $env.BUILD_TAG'
-                // What's the build url
-                echo 'Build URL: $env.BUILD_URL'
-                // What's the job name
-                echo 'Job Name: $env.JOB_NAME'
+                echo "Build ID: $env.BUILD_ID"
+                // What"s the build tag
+                echo "Build Tag: $env.BUILD_TAG"
+                // What"s the build url
+                echo "Build URL: $env.BUILD_URL"
+                // What"s the job name
+                echo "Job Name: $env.JOB_NAME"
             }
         }
         stage('Test') {
