@@ -7,7 +7,7 @@ pipeline {
                 // sh 'node --version'
                 echo 'Build'
                 // Whats the path
-                echo "$PATH"
+                echo "Path: $PATH"
                 // What"s the build number
                 echo "Build Number: $env.BUILD_NUMBER"
                 // Whats the build id
