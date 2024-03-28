@@ -19,7 +19,6 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -41,6 +40,18 @@
 	</properties>
 
 	<dependencies>
+
+	    <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version></version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
