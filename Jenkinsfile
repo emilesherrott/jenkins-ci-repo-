@@ -29,12 +29,12 @@ pipeline {
                 sh "mvn test"
             }
         }
-        stage('Integration Test'){
+        stage('Integration Test') {
             steps {
-                echo "Integration Tests"
+                sh "mvn failsafe:integration-test failsafe:verify"
             }
         }
-    }
+    } 
     post {
         always {
             echo 'I always run'
