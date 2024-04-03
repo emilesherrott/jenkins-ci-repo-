@@ -29,7 +29,7 @@ pipeline {
                 sh "mvn test"
             }
         }
-        }
+    }
     } 
     post {
         always {
