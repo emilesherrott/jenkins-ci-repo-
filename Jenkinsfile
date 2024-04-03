@@ -42,4 +42,4 @@ pipeline {
             echo 'I run when failed'
         }
     }
-}
+
