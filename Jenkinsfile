@@ -30,7 +30,6 @@ pipeline {
             }
         }
     }
-    } 
     post {
         always {
             echo 'I always run'
@@ -42,4 +41,4 @@ pipeline {
             echo 'I run when failed'
         }
     }
-
+}
