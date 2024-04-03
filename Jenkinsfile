@@ -29,6 +29,11 @@ pipeline {
                 sh "mvn test"
             }
         }
+        stage('Integration Test'){
+            steps {
+                echo "Integration Tests"
+            }
+        }
     }
     post {
         always {
